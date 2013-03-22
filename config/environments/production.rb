@@ -66,4 +66,14 @@ Omrails::Application.configure do
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
+  #Paperclip should use Amazon S3 on Heroku
+    config.paperclip_defaults = {
+    :storage => :s3,
+    :s3_credentials => {
+      :bucket => "onemonthrails",
+      :access_key_id => "AKIAJGGSNQ6DTQA446SQ",
+      :secret_access_key => "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"
+    }
+  }
 end
