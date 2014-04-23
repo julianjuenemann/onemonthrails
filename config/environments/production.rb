@@ -72,8 +72,8 @@ Omrails::Application.configure do
     :storage => :s3,
     :s3_credentials => {
       :bucket => "onemonthrails22",
-      :access_key_id => "AKIAJGGSNQ6DTQA446SQ",
-      :secret_access_key => "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"
+      :access_key_id => "",
+      :secret_access_key => ""
     }
   }
 end
